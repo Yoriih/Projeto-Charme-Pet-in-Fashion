@@ -1,9 +1,10 @@
 /* --- VARIAVEIS E ESTILOS GLOBAIS --- */
 :root {
-    --primary-pink: #E75480; /* Rosa do logo */
-    --soft-beige: #FDF5E6;   /* Bege claro de fundo */
-    --light-blue: #B0C4DE;   /* Azul claro para detalhes */
-    --dark-text: #4F4F4F;    /* Cinza escuro para textos */
+    --primary-pink: #F38282;   [cite_start]/* Cor Principal [cite: 3] */
+    --soft-beige: #FFF9D9;     [cite_start]/* Bege Suave [cite: 1] */
+    --light-blue: #91D8F7;     [cite_start]/* Azul Claro [cite: 4] */
+    --dark-text: #000000;      [cite_start]/* Texto Escuro [cite: 5] */
+    --brown-accent: #A67142;  [cite_start]/* Marrom de Destaque [cite: 1] */
     --white: #FFFFFF;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
@@ -21,7 +22,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--white);
-    color: var(--dark-text);
+    color: var(--dark-text); [cite_start]/* [cite: 5] */
     line-height: 1.6;
 }
 
@@ -38,7 +39,7 @@ section {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
     margin-bottom: 50px;
     font-weight: 600;
 }
@@ -46,7 +47,7 @@ section {
 /* --- BOTÕES --- */
 .btn {
     display: inline-block;
-    background-color: var(--primary-pink);
+    background-color: var(--primary-pink); [cite_start]/* [cite: 3] */
     color: var(--white);
     padding: 12px 28px;
     border-radius: 50px;
@@ -57,23 +58,23 @@ section {
 
 .btn:hover {
     transform: translateY(-3px);
-    background-color: #d1426d;
+    background-color: #F5999A; [cite_start]/* Cor de hover do arquivo [cite: 2] */
 }
 
 .btn-secondary {
     display: inline-block;
     background-color: transparent;
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
     padding: 10px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid var(--primary-pink);
+    border: 2px solid var(--primary-pink); [cite_start]/* [cite: 3] */
     transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-pink);
+    background-color: var(--primary-pink); [cite_start]/* [cite: 3] */
     color: var(--white);
 }
 
@@ -84,7 +85,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 249, 217, 0.85); [cite_start]/* Bege com transparência [cite: 1] */
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
     padding: 15px 0;
@@ -112,7 +113,7 @@ header nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--dark-text);
+    color: var(--brown-accent); [cite_start]/* [cite: 1] */
     font-weight: 600;
     position: relative;
     padding-bottom: 5px;
@@ -125,7 +126,7 @@ header nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-pink);
+    background-color: var(--primary-pink); [cite_start]/* [cite: 3] */
     transition: width 0.3s ease;
 }
 
@@ -134,20 +135,21 @@ header nav {
 }
 
 .nav-icons a {
-    color: var(--dark-text);
+    color: var(--brown-accent); [cite_start]/* [cite: 1] */
     font-size: 1.2rem;
     margin-left: 20px;
     transition: color 0.3s ease;
 }
 
 .nav-icons a:hover {
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
 }
 
 /* --- SEÇÃO HERO --- */
 #hero {
+    /* ATUALIZADO com seu usuário */
+    background: url('https://raw.githubusercontent.com/Yoriih/NOME-DO-SEU-REPOSITORIO/main/carrossel1.jpg') no-repeat center center/cover;
     height: 100vh;
-    background: url('hero-background.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +165,7 @@ header nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4); [cite_start]/* [cite: 5] */
 }
 
 .hero-content {
@@ -176,13 +178,13 @@ header nav {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); [cite_start]/* [cite: 5] */
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); [cite_start]/* [cite: 5] */
 }
 
 /* --- SEÇÃO CAUSA & MEDIDAS --- */
@@ -204,13 +206,14 @@ header nav {
 
 #causa h2, #medidas h2 {
     font-size: 2.5rem;
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
     font-weight: 600;
 }
 #causa h3, #medidas h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 400;
+    color: var(--brown-accent); [cite_start]/* [cite: 1] */
 }
 #causa p, #medidas p {
     margin-bottom: 30px;
@@ -218,7 +221,7 @@ header nav {
 
 /* --- SEÇÃO COLEÇÕES --- */
 #colecoes {
-    background-color: var(--soft-beige);
+    background-color: var(--soft-beige); [cite_start]/* [cite: 1] */
 }
 
 .colecoes-grid {
@@ -251,13 +254,13 @@ header nav {
 }
 
 .card-content h3 {
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
     margin-bottom: 10px;
 }
 
 .card-content a {
     text-decoration: none;
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
     font-weight: 600;
     margin-top: 15px;
     display: inline-block;
@@ -271,7 +274,7 @@ header nav {
 }
 
 .depoimento-card {
-    background: var(--soft-beige);
+    background: var(--soft-beige); [cite_start]/* [cite: 1] */
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -294,13 +297,13 @@ header nav {
 
 .depoimento-card cite {
     font-weight: 600;
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
 }
 
 /* --- FOOTER --- */
 footer {
-    background-color: var(--dark-text);
-    color: var(--soft-beige);
+    background-color: var(--brown-accent); [cite_start]/* [cite: 1] */
+    color: var(--soft-beige); [cite_start]/* [cite: 1] */
     padding-top: 60px;
 }
 
@@ -314,6 +317,9 @@ footer {
 .footer-logo {
     height: 60px;
     margin-bottom: 15px;
+    background-color: var(--soft-beige); [cite_start]/* [cite: 1] */
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .footer-col h4 {
@@ -331,13 +337,13 @@ footer {
 }
 
 .footer-col ul a {
-    color: var(--soft-beige);
+    color: var(--soft-beige); [cite_start]/* [cite: 1] */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col ul a:hover {
-    color: var(--primary-pink);
+    color: var(--primary-pink); [cite_start]/* [cite: 3] */
 }
 
 .newsletter-form input {
@@ -356,7 +362,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid #666;
+    border-top: 1px solid rgba(255, 249, 217, 0.2); [cite_start]/* [cite: 1] */
 }
 
 /* --- ANIMAÇÕES DE SCROLL --- */
@@ -374,7 +380,7 @@ footer {
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Em um site real, aqui entraria um menu hamburguer */
+        display: none;
     }
     
     .hero-content h1 {

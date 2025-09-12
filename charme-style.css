@@ -1,0 +1,395 @@
+/* --- VARIAVEIS E ESTILOS GLOBAIS --- */
+:root {
+    --primary-pink: #E75480; /* Rosa do logo */
+    --soft-beige: #FDF5E6;   /* Bege claro de fundo */
+    --light-blue: #B0C4DE;   /* Azul claro para detalhes */
+    --dark-text: #4F4F4F;    /* Cinza escuro para textos */
+    --white: #FFFFFF;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-pink);
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+/* --- BOTÕES --- */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #d1426d;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-pink);
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--primary-pink);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-pink);
+    color: var(--white);
+}
+
+/* --- HEADER / NAVEGAÇÃO --- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-pink);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-icons a {
+    color: var(--dark-text);
+    font-size: 1.2rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+    color: var(--primary-pink);
+}
+
+/* --- SEÇÃO HERO --- */
+#hero {
+    height: 100vh;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* --- SEÇÃO CAUSA & MEDIDAS --- */
+#causa, #medidas {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#causa > div, #medidas > div {
+    flex: 1;
+}
+
+#causa img, #medidas img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+#causa h2, #medidas h2 {
+    font-size: 2.5rem;
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+#causa h3, #medidas h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+#causa p, #medidas p {
+    margin-bottom: 30px;
+}
+
+/* --- SEÇÃO COLEÇÕES --- */
+#colecoes {
+    background-color: var(--soft-beige);
+}
+
+.colecoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    color: var(--primary-pink);
+    margin-bottom: 10px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: var(--primary-pink);
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* --- SEÇÃO DEPOIMENTOS --- */
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.depoimento-card {
+    background: var(--soft-beige);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.depoimento-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow);
+}
+
+.depoimento-card blockquote {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.depoimento-card cite {
+    font-weight: 600;
+    color: var(--primary-pink);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--dark-text);
+    color: var(--soft-beige);
+    padding-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul a {
+    color: var(--soft-beige);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul a:hover {
+    color: var(--primary-pink);
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form .btn {
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #666;
+}
+
+/* --- ANIMAÇÕES DE SCROLL --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Em um site real, aqui entraria um menu hamburguer */
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    #causa, #medidas {
+        flex-direction: column;
+    }
+    
+    #medidas {
+        flex-direction: column-reverse;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

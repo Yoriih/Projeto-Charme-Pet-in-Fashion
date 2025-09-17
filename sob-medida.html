@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sob Medida - Charme Pet in Fashion</title> 
+    <link rel="stylesheet" href="charme-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/logo-png-rgb.png" alt="Logo Charme Pet in Fashion">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="colecoes.html">Coleções</a></li>
+                <li><a href="sob-medida.html">Sob Medida</a></li>
+                <li><a href="nossa-causa.html">Nossa Causa</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+
+    <main>
+        
+    <section id="form-sob-medida" class="container">
+        <div class="form-container animate-on-scroll">
+            <h2 class="section-title">Roupinha Sob Medida</h2>
+            <p class="subtitulo">Vamos criar juntos a peça perfeita para o seu melhor amigo!</p>
+
+            <div class="barra-progresso">
+                <div class="passo active"><span>1</span> Sobre o Pet</div>
+                <div class="passo"><span>2</span> Medidas</div>
+                <div class="passo"><span>3</span> Estilo</div>
+                <div class="passo"><span>4</span> Detalhes</div>
+            </div>
+
+            <form class="form-wizard">
+
+                <div class="etapa-form active" data-step="1">
+                    <div class="campo-form">
+                        <label for="nome-pet">Nome do Pet</label>
+                        <input type="text" id="nome-pet" placeholder="Ex: Paçoca">
+                    </div>
+                    <div class="campo-form">
+                        <label for="raca-pet">Raça (ou SRD)</label>
+                        <input type="text" id="raca-pet" placeholder="Ex: Dachshund, SRD (Vira-lata)">
+                    </div>
+                    <div class="campo-form">
+                        <label for="peso-pet">Peso Aproximado (kg)</label>
+                        <input type="number" id="peso-pet" placeholder="Ex: 5.5">
+                    </div>
+                     <div class="campo-form">
+                        <label for="foto-pet">Envie uma foto (opcional)</label>
+                        <input type="file" id="foto-pet" class="input-file">
+                    </div>
+                    <div class="botoes-nav">
+                        <button type="button" class="btn btn-proximo">Próximo</button>
+                    </div>
+                </div>
+
+                <div class="etapa-form" data-step="2">
+                    <div class="container-medidas">
+                        <div class="campos-medidas">
+                            <p class="instrucao-medida">Use uma fita métrica sem apertar. Clique em cada campo para ver onde medir no diagrama.</p>
+                            <div class="campo-form">
+                                <label for="medida-pescoco">Pescoço (cm)</label>
+                                <input type="number" class="input-medida" data-target="pescoco" id="medida-pescoco" placeholder="Circunferência do pescoço">
+                            </div>
+                            <div class="campo-form">
+                                <label for="medida-torax">Tórax (cm)</label>
+                                <input type="number" class="input-medida" data-target="torax" id="medida-torax" placeholder="A parte mais larga do peito">
+                            </div>
+                            <div class="campo-form">
+                                <label for="medida-comprimento">Comprimento (cm)</label>
+                                <input type="number" class="input-medida" data-target="comprimento" id="medida-comprimento" placeholder="Base do pescoço ao início do rabo">
+                            </div>
+                        </div>
+                        <div class="diagrama-medidas">
+                            <img src="https://i.imgur.com/pY1k3h2.png" alt="Diagrama de como medir o pet">
+                            <div class="ponto-medida" id="pescoco"></div>
+                            <div class="ponto-medida" id="torax"></div>
+                            <div class="ponto-medida" id="comprimento"></div>
+                        </div>
+                    </div>
+                    <div class="botoes-nav">
+                        <button type="button" class="btn-secondary btn-anterior">Anterior</button>
+                        <button type="button" class="btn btn-proximo">Próximo</button>
+                    </div>
+                </div>
+
+                <div class="etapa-form" data-step="3">
+                     <p class="instrucao-medida">Qual tipo de peça você gostaria de encomendar?</p>
+                     <div class="grid-selecao-estilo">
+                         <div class="card-estilo" data-value="moletom">
+                            <i class="fas fa-tshirt"></i>
+                            <h4>Moletom</h4>
+                         </div>
+                          <div class="card-estilo" data-value="vestido">
+                            <i class="fas fa-female"></i>
+                            <h4>Vestido</h4>
+                         </div>
+                          <div class="card-estilo" data-value="capa_chuva">
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <h4>Capa de Chuva</h4>
+                         </div>
+                          <div class="card-estilo" data-value="acessorio">
+                            <i class="fas fa-paw"></i>
+                            <h4>Acessório</h4>
+                         </div>
+                     </div>
+                    <div class="botoes-nav">
+                        <button type="button" class="btn-secondary btn-anterior">Anterior</button>
+                        <button type="button" class="btn btn-proximo">Próximo</button>
+                    </div>
+                </div>
+
+                <div class="etapa-form" data-step="4">
+                    <div class="campo-form">
+                        <label>Deseja bordar o nome do pet na peça? (custo adicional)</label>
+                        <div class="radio-group">
+                            <input type="radio" id="borda-sim" name="bordado" value="sim"><label for="borda-sim">Sim</label>
+                            <input type="radio" id="borda-nao" name="bordado" value="nao" checked><label for="borda-nao">Não</label>
+                        </div>
+                    </div>
+                    <div class="campo-form">
+                        <label for="observacoes">Observações (opcional)</label>
+                        <textarea id="observacoes" rows="4" placeholder="Ex: Meu pet é muito peludo, prefiro o tecido X, etc."></textarea>
+                    </div>
+                    <div class="botoes-nav">
+                        <button type="button" class="btn-secondary btn-anterior">Anterior</button>
+                        <button type="submit" class="btn">Enviar para Orçamento</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    </main>
+<br>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/logo-png-rgb.png" alt="Logo Charme" class="footer-logo">
+                    <p>Moda com coração para o seu melhor amigo. Feito à mão, com amor e propósito.</p>
+                </div>
+                <div class="footer-col"><h4>Navegue</h4>
+                    <ul>
+                        <li><a href="colecoes.html">Coleções</a></li>
+                        <li><a href="sob-medida.html">Sob Medida</a></li>
+                        <li><a href="nossa-causa.html">Nossa Causa</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col"><h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531989158297" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (31) 98915-8297</a></li>
+                        <li><a href="mailto:contato@charmepet.com"><i class="fas fa-envelope"></i> contato@charmepet.com</a></li>
+                        <li><a href="https://instagram.com/charme.modapet/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> charme.modapet</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col"><h4>Newsletter</h4>
+                    <p>Receba novidades e promoções exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit" class="btn">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Charme Pet in Fashion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="charme-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleções - Charme Pet in Fashion</title> 
+    <link rel="stylesheet" href="charme-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/logo-png-rgb.png" alt="Logo Charme Pet in Fashion">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="colecoes.html">Coleções</a></li>
+                <li><a href="sob-medida.html">Sob Medida</a></li>
+                <li><a href="nossa-causa.html">Nossa Causa</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="vitrine-produtos" class="container">
+            <h2 class="section-title animate-on-scroll">Nossa Coleção</h2>
+            <div class="filtros animate-on-scroll">
+                <button class="btn-filtro active" data-filter="all">Todos</button>
+                <button class="btn-filtro" data-filter="moletom">Moletons</button>
+                <button class="btn-filtro" data-filter="vestido">Vestidos</button>
+                <button class="btn-filtro" data-filter="acessorio">Acessórios</button>
+            </div>
+            <div class="grid-produtos">
+                <div class="card-produto moletom animate-on-scroll">
+                    <div class="imagem-produto"><img src="https://placehold.co/400x500/F38282/FFF?text=Produto+1" alt="Roupa para pet"></div>
+                    <div class="info-produto">
+                        <h3>Moletom Morango</h3>
+                        <p class="preco">R$ 89,90</p>
+                    </div>
+                    <div class="overlay-produto"><a href="#" class="btn">Ver Detalhes</a></div>
+                </div>
+                <div class="card-produto vestido animate-on-scroll">
+                    <div class="imagem-produto"><img src="https://placehold.co/400x500/F7ADAF/FFF?text=Produto+2" alt="Roupa para pet"></div>
+                    <div class="info-produto">
+                        <h3>Vestido Primavera</h3>
+                        <p class="preco">R$ 99,90</p>
+                    </div>
+                    <div class="overlay-produto"><a href="#" class="btn">Ver Detalhes</a></div>
+                </div>
+                <div class="card-produto acessorio animate-on-scroll">
+                    <div class="imagem-produto"><img src="https://placehold.co/400x500/91D8F7/FFF?text=Produto+3" alt="Roupa para pet"></div>
+                    <div class="info-produto">
+                        <h3>Laço Azul Céu</h3>
+                        <p class="preco">R$ 29,90</p>
+                    </div>
+                    <div class="overlay-produto"><a href="#" class="btn">Ver Detalhes</a></div>
+                </div>
+            </div>
+        </section> 
+    </main>
+<br>    
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/logo-png-rgb.png" alt="Logo Charme" class="footer-logo">
+                    <p>Moda com coração para o seu melhor amigo. Feito à mão, com amor e propósito.</p>
+                </div>
+                <div class="footer-col"><h4>Navegue</h4>
+                    <ul>
+                        <li><a href="colecoes.html">Coleções</a></li>
+                        <li><a href="sob-medida.html">Sob Medida</a></li>
+                        <li><a href="nossa-causa.html">Nossa Causa</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col"><h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5531989158297" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (31) 98915-8297</a></li>
+                        <li><a href="mailto:contato@charmepet.com"><i class="fas fa-envelope"></i> contato@charmepet.com</a></li>
+                        <li><a href="https://instagram.com/charme.modapet/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> charme.modapet</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col"><h4>Newsletter</h4>
+                    <p>Receba novidades e promoções exclusivas!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit" class="btn">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Charme Pet in Fashion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="charme-script.js"></script>
+</body>
+</html>

@@ -22,7 +22,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--white);
-    color: var(--dark-text); /* */
+    color: var(--dark-text);
     line-height: 1.6;
 }
 
@@ -39,7 +39,7 @@ section {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
     margin-bottom: 50px;
     font-weight: 600;
 }
@@ -47,7 +47,7 @@ section {
 /* --- BOTÕES --- */
 .btn {
     display: inline-block;
-    background-color: var(--primary-pink); /* */
+    background-color: var(--primary-pink);
     color: var(--white);
     padding: 12px 28px;
     border-radius: 50px;
@@ -58,23 +58,23 @@ section {
 
 .btn:hover {
     transform: translateY(-3px);
-    background-color: #F5999A; /* Cor de hover do arquivo */
+    background-color: #F5999A;
 }
 
 .btn-secondary {
     display: inline-block;
     background-color: transparent;
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
     padding: 10px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid var(--primary-pink); /* */
+    border: 2px solid var(--primary-pink);
     transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-pink); /* */
+    background-color: var(--primary-pink);
     color: var(--white);
 }
 
@@ -85,7 +85,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(255, 249, 217, 0.85); /* Bege com transparência */
+    background-color: rgba(255, 249, 217, 0.85);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
     padding: 15px 0;
@@ -113,7 +113,7 @@ header nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--brown-accent); /* */
+    color: var(--brown-accent);
     font-weight: 600;
     position: relative;
     padding-bottom: 5px;
@@ -126,7 +126,7 @@ header nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-pink); /* */
+    background-color: var(--primary-pink);
     transition: width 0.3s ease;
 }
 
@@ -135,19 +135,18 @@ header nav {
 }
 
 .nav-icons a {
-    color: var(--brown-accent); /* */
+    color: var(--brown-accent);
     font-size: 1.2rem;
     margin-left: 20px;
     transition: color 0.3s ease;
 }
 
 .nav-icons a:hover {
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
 }
 
 /* --- SEÇÃO HERO --- */
 #hero {
-    /* ATUALIZADO com usuário e repositório */
     background: url('https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/carrossel1.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -165,7 +164,7 @@ header nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-content {
@@ -178,16 +177,16 @@ header nav {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-/* --- SEÇÃO CAUSA & MEDIDAS --- */
+/* --- SEÇÕES DE CONTEÚDO (CAUSA & MEDIDAS) --- */
 #causa, #medidas {
     display: flex;
     align-items: center;
@@ -206,22 +205,22 @@ header nav {
 
 #causa h2, #medidas h2 {
     font-size: 2.5rem;
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
     font-weight: 600;
 }
 #causa h3, #medidas h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 400;
-    color: var(--brown-accent); /* */
+    color: var(--brown-accent);
 }
 #causa p, #medidas p {
     margin-bottom: 30px;
 }
 
-/* --- SEÇÃO COLEÇÕES --- */
+/* --- SEÇÃO COLEÇÕES (Layout Simples de Cards) --- */
 #colecoes {
-    background-color: var(--soft-beige); /* */
+    background-color: var(--soft-beige);
 }
 
 .colecoes-grid {
@@ -254,13 +253,13 @@ header nav {
 }
 
 .card-content h3 {
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
     margin-bottom: 10px;
 }
 
 .card-content a {
     text-decoration: none;
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
     font-weight: 600;
     margin-top: 15px;
     display: inline-block;
@@ -274,7 +273,7 @@ header nav {
 }
 
 .depoimento-card {
-    background: var(--soft-beige); /* */
+    background: var(--soft-beige);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -297,13 +296,13 @@ header nav {
 
 .depoimento-card cite {
     font-weight: 600;
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
 }
 
 /* --- FOOTER --- */
 footer {
-    background-color: var(--brown-accent); /* */
-    color: var(--soft-beige); /* */
+    background-color: var(--brown-accent);
+    color: var(--soft-beige);
     padding-top: 60px;
 }
 
@@ -317,7 +316,7 @@ footer {
 .footer-logo {
     height: 60px;
     margin-bottom: 15px;
-    background-color: var(--soft-beige); /* */
+    background-color: var(--soft-beige);
     border-radius: 10px;
     padding: 5px;
 }
@@ -337,13 +336,13 @@ footer {
 }
 
 .footer-col ul a {
-    color: var(--soft-beige); /* */
+    color: var(--soft-beige);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-col ul a:hover {
-    color: var(--primary-pink); /* */
+    color: var(--primary-pink);
 }
 
 .newsletter-form input {
@@ -362,7 +361,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid rgba(255, 249, 217, 0.2); /* */
+    border-top: 1px solid rgba(255, 249, 217, 0.2);
 }
 
 /* --- ANIMAÇÕES DE SCROLL --- */
@@ -398,4 +397,272 @@ footer {
     .section-title {
         font-size: 2rem;
     }
+}
+
+/* --- VITRINE DE PRODUTOS INTERATIVA (Página Coleções) --- */
+.filtros {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-filtro {
+    background: transparent;
+    border: 2px solid var(--soft-beige);
+    color: var(--brown-accent);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover {
+    background-color: var(--soft-beige);
+    border-color: var(--primary-pink);
+}
+
+.btn-filtro.active {
+    background-color: var(--primary-pink);
+    color: var(--white);
+    border-color: var(--primary-pink);
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-produto {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.card-produto.hide {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.imagem-produto {
+    overflow: hidden;
+}
+
+.card-produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.info-produto {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-produto h3 {
+    color: var(--primary-pink);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-produto .preco {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--brown-accent);
+}
+
+.overlay-produto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card-produto:hover .overlay-produto {
+    opacity: 1;
+}
+
+.card-produto:hover img {
+    transform: scale(1.05);
+}
+
+/* --- PÁGINA SOB MEDIDA INTERATIVA --- */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.subtitulo {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    color: var(--brown-accent);
+}
+
+.barra-progresso {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.passo {
+    text-align: center;
+    color: #ccc;
+    font-weight: 600;
+    position: relative;
+    flex: 1;
+}
+.passo span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+.passo.active {
+    color: var(--primary-pink);
+}
+.passo.active span {
+    background: var(--primary-pink);
+    border-color: var(--primary-pink);
+    color: var(--white);
+}
+
+.etapa-form {
+    display: none;
+}
+.etapa-form.active {
+    display: block;
+}
+
+.campo-form {
+    margin-bottom: 25px;
+}
+.campo-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--brown-accent);
+}
+.campo-form input[type="text"],
+.campo-form input[type="number"],
+.campo-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--soft-beige);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.campo-form input:focus,
+.campo-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-pink);
+}
+
+.botoes-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.botoes-nav button:first-child:last-child {
+    margin: 0 auto;
+}
+
+.container-medidas {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.campos-medidas { flex: 1; }
+.diagrama-medidas { 
+    flex: 1; 
+    position: relative;
+}
+.diagrama-medidas img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.instrucao-medida {
+    font-style: italic;
+    color: var(--brown-accent);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.ponto-medida {
+    position: absolute;
+    background: rgba(243, 130, 130, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--primary-pink);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+#pescoco { top: 25%; left: 45%; width: 30px; height: 30px; }
+#torax { top: 45%; left: 40%; width: 40px; height: 40px; }
+#comprimento { top: 42%; left: 5%; width: 100px; height: 25px; border-radius: 10px; }
+
+.ponto-medida.active { opacity: 1; }
+
+.grid-selecao-estilo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.card-estilo {
+    background: var(--soft-beige);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.card-estilo i {
+    font-size: 2.5rem;
+    color: var(--brown-accent);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.card-estilo h4 {
+    font-weight: 600;
+    color: var(--brown-accent);
+    transition: all 0.3s ease;
+}
+.card-estilo:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+.card-estilo.active {
+    border-color: var(--primary-pink);
+    background: var(--white);
+}
+.card-estilo.active i, .card-estilo.active h4 {
+    color: var(--primary-pink);
 }

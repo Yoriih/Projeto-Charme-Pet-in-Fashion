@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="manifest" href="manifest.json">
+
 </head>
-<body>
+<body> 
 
     <header>
         <nav class="container">
@@ -177,5 +179,14 @@
     </footer>
 
     <script src="charme-script.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js")
+            .then(() => console.log("Service Worker registrado!"))
+            .catch(err => console.error("Erro no Service Worker:", err));
+        }
+    </script>
+
 </body>
 </html>

@@ -31,11 +31,19 @@
         </nav>
     </header>
 
-    <main>
-        <section class="container" style="padding-top: 150px; text-align: center; min-height: 50vh; margin-top: 110px; margin-bottom: 20px;">
-            <h1 style="color: #F38282; font-size: 2.5rem;">Meu Carrinho de Compras</h1>
-            <p style="margin-top: 20px;">Seu carrinho está vazio no momento.</p>
-            <a href="colecoes.html" class="btn" style="margin-top: 30px;">Ver Coleções</a>
+    <main class="cart-page-main">
+        <section class="container" style="padding-top: 150px; min-height: 70vh; margin-top: 110px; margin-bottom: 20px;">
+            <h1 style="color: #F38282; font-size: 2.5rem; text-align: center; margin-bottom: 40px;">Meu Carrinho de Compras</h1>
+            
+            <div class="cart-wrapper">
+                <div id="carrinho-container">
+                </div>
+
+                <div id="carrinho-vazio" style="text-align: center; display: none;">
+                    <p style="margin-top: 20px;">Seu carrinho está vazio no momento.</p>
+                    <a href="colecoes.html" class="btn" style="margin-top: 30px;">Ver Coleções</a>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -54,14 +62,14 @@
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
-                 <div class="footer-col"><h4>Contato</h4>
+                <div class="footer-col"><h4>Contato</h4>
                     <ul>
                         <li><a href="https://wa.me/5531989158297" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (31) 98915-8297</a></li>
                         <li><a href="mailto:contato@charmepet.com"><i class="fas fa-envelope"></i> contato@charmepet.com</a></li>
                         <li><a href="https://instagram.com/charme.modapet/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> charme.modapet</a></li>
                     </ul>
                 </div>
-                 <div class="footer-col"><h4>Newsletter</h4>
+                <div class="footer-col"><h4>Newsletter</h4>
                     <p>Receba novidades e promoções exclusivas!</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Seu melhor e-mail">

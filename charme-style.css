@@ -707,3 +707,174 @@ footer {
     color: var(--primary-pink);
 }
 
+/* --- ESTILOS PARA PÁGINA DE LOGIN --- */
+.login-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+.form-box .form-title {
+    color: var(--primary-pink);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.form-box .campo-form {
+    margin-bottom: 20px;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--brown-accent);
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-box .btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.form-switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-switch a {
+    color: var(--primary-pink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* --- ESTILOS PARA PÁGINA DO CARRINHO (VERSÃO ATUALIZADA) --- */
+
+/* Fundo da página e ajuste de espaçamento do título */
+body {
+    background-color: var(--soft-beige); /* Cor de fundo fora da moldura */
+}
+
+.cart-page-main {
+    padding-top: 130px; /* Espaçamento ajustado no topo */
+    padding-bottom: 60px;
+}
+
+.cart-page-main h1 {
+    text-align: center;
+    color: var(--primary-pink);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* A "Moldura" branca para os itens */
+.cart-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: var(--shadow);
+}
+
+/* Estilo de cada item no carrinho */
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Miniatura da imagem */
+.carrinho-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.carrinho-item-info {
+    flex-grow: 1;
+}
+
+.carrinho-item-info h4 {
+    color: var(--primary-pink);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.carrinho-item-info p {
+    color: var(--brown-accent);
+    font-size: 0.9rem;
+}
+
+.carrinho-item-preco {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.btn-remover {
+    background: none;
+    border: none;
+    color: var(--primary-pink);
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.btn-remover:hover {
+    color: #cc0000;
+}
+
+/* Resumo da compra */
+.carrinho-resumo {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--soft-beige); /* Fundo igual ao da página */
+    border-radius: 10px;
+    text-align: right;
+}
+
+.carrinho-resumo h3 {
+    color: var(--primary-pink);
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+/* Estilo dos botões do resumo */
+.carrinho-resumo .btn {
+    border: none; /* Remove a borda preta */
+    margin-left: 10px;
+}
+
+.carrinho-resumo .btn-limpar-carrinho {
+    background-color: #A9A9A9; /* Cinza como no seu exemplo */
+    color: var(--dark-text);
+}
+.carrinho-resumo .btn-limpar-carrinho:hover {
+    background-color: #888;
+}
+
+/* Mensagem de carrinho vazio */
+#carrinho-vazio {
+    text-align: center;
+    padding: 40px 0;
+}

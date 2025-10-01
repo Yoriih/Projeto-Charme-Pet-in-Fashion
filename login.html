@@ -32,11 +32,41 @@
     </header>
 
     <main>
-        <section class="container" style="padding-top: 150px; text-align: center; min-height: 50vh;margin-top: 110px; margin-bottom: 20px;">
-            <h1 style="color: #F38282; font-size: 2.5rem;">Acesse sua Conta</h1>
-            <p style="margin-top: 20px;">Em breve, você poderá fazer login para ver seus pedidos.</p>
-             <a href="index.html" class="btn" style="margin-top: 30px;">Voltar ao Início</a>
-        </section>
+        <section class="container" style="padding-top: 150px; min-height: 70vh; margin-top: 110px; margin-bottom: 20px;">
+        <div class="login-container">
+            <form id="login-form" class="form-box">
+                <h2 class="form-title">Acesse sua Conta</h2>
+                <div class="campo-form">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="campo-form">
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <p class="form-switch">Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+            </form>
+
+            <form id="register-form" class="form-box" style="display: none;">
+                <h2 class="form-title">Crie sua Conta</h2>
+                <div class="campo-form">
+                    <label for="register-nome">Nome</label>
+                    <input type="text" id="register-nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="campo-form">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="campo-form">
+                    <label for="register-senha">Senha</label>
+                    <input type="password" id="register-senha" placeholder="Crie uma senha forte" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <p class="form-switch">Já tem uma conta? <a href="#" id="show-login">Faça Login</a></p>
+            </form>
+        </div>
+    </section>
     </main>
 
     <footer id="contato">

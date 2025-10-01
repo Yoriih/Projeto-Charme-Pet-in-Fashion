@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (totalItems > 0 && cartIcon) {
             // Cria um contador visual no ícone
-             if (!cartIcon.querySelector('span')) {
+            if (!cartIcon.querySelector('span')) {
                 const counter = document.createElement('span');
                 counter.style.cssText = `
                     position: absolute; 

@@ -77,7 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser'));
         if (loggedInUser) {
             // Se estiver logado, muda o ícone para um de 'logout'
-            // O ideal seria criar uma página "minha-conta.html"
+
+            // falta criar uma página "minha-conta.html"
+
             userIconLink.innerHTML = '<i class="fas fa-sign-out-alt"></i>'; 
             userIconLink.href = "#"; // Evita que vá para a página de login
             userIconLink.addEventListener('click', (e) => {
@@ -102,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         
         if (totalItems > 0 && cartIcon) {
-            // Cria um contador visual no ícone
+            // Contador visual no ícone
             if (!cartIcon.querySelector('span')) {
                 const counter = document.createElement('span');
                 counter.style.cssText = `
@@ -133,9 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const id = e.target.dataset.id;
         const nome = e.target.dataset.nome;
         const preco = parseFloat(e.target.dataset.preco);
-        const imagem = e.target.dataset.imagem; // <-- ADICIONE ESTA LINHA
+        const imagem = e.target.dataset.imagem; // 
 
-        addItemToCart({ id, nome, preco, imagem, quantity: 1 }); // <-- ADICIONE 'imagem' AQUI
+        addItemToCart({ id, nome, preco, imagem, quantity: 1 }); 
         alert(`${nome} foi adicionado ao carrinho!`);
         });
     });
@@ -157,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: `sm-${Date.now()}`,
             nome: `Peça Sob Medida para ${petName} (${estilo})`,
             preco: 120.00,
-            // ADICIONE A LINHA ABAIXO
+            
             imagem: 'https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/images/linha.png',
             quantity: 1
             };
@@ -188,10 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const carrinhoVazioMsg = document.getElementById('carrinho-vazio');
 
     function displayCart() {
-        if (!carrinhoContainer) return; // Só executa se estiver na página do carrinho
+        if (!carrinhoContainer) return; // Só e executado se estiver na página do carrinho
 
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        carrinhoContainer.innerHTML = ''; // Limpa a visualização atual
+        carrinhoContainer.innerHTML = ''; 
 
         if (cart.length === 0) {
             carrinhoVazioMsg.style.display = 'block';
@@ -202,7 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.forEach((item, index) => {
                 const itemElement = document.createElement('div');
                 itemElement.classList.add('carrinho-item');
-                // SUBSTITUA O INNERHTML PELO CÓDIGO ABAIXO
+
+                
                 itemElement.innerHTML = `
                     <img src="${item.imagem}" alt="${item.nome}" class="carrinho-item-img">
                     <div class="carrinho-item-info">
@@ -218,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 total += item.preco * item.quantity;
             });
 
-            // Adiciona o resumo e total
+            // Resumo e total
             const resumoElement = document.createElement('div');
             resumoElement.classList.add('carrinho-resumo');
             resumoElement.innerHTML = `
@@ -228,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             carrinhoContainer.appendChild(resumoElement);
 
-            // Adiciona funcionalidade aos botões de remover e limpar
+            // Funcionalidade aos botões de remover e limpar
             document.querySelectorAll('.btn-remover').forEach(button => {
                 button.addEventListener('click', (e) => {
                     const index = e.currentTarget.dataset.index;
@@ -239,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.btn-limpar-carrinho').addEventListener('click', () => {
                 if(confirm('Tem certeza que deseja esvaziar o carrinho?')) {
                     localStorage.removeItem('cart');
-                    displayCart(); // Re-renderiza o carrinho (que agora está vazio)
+                    displayCart(); // Re-renderiza o carrinho
                     updateCartIcon();
                 }
             });
@@ -254,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartIcon();
     }
 
-    // --- LÓGICA PARA ANIMAÇÃO AO ROLAR A PÁGINA ---
+    // --- ANIMAÇÃO AO ROLAR A PÁGINA ---
     const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
     const observerOptions = {
         root: null,

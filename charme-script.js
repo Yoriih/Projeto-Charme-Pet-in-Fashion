@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = {
             id: `sm-${Date.now()}`,
             nome: `Peça Sob Medida para ${petName} (${estilo})`,
-            preco: xx.xx,
+            preco: 0.00,
             
             imagem: 'https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/images/linha.png',
             quantity: 1

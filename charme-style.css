@@ -63,7 +63,7 @@ section {
 
 .btn-secondary {
     display: inline-block;
-    background-color: transparent;
+    background-color: var(--white);
     color: var(--primary-pink);
     padding: 10px 25px;
     border-radius: 50px;
@@ -155,7 +155,8 @@ header nav {
     text-align: center;
     color: var(--white);
     position: relative;
-    margin: 10px;
+    margin-top: auto;
+    margin-bottom: 50px;
     border-radius: 30px;
 }
 
@@ -636,6 +637,7 @@ footer {
     display: flex;
     gap: 30px;
     align-items: center;
+    
 }
 .campos-medidas { flex: 1; }
 .diagrama-medidas { 
@@ -770,7 +772,7 @@ body {
 }
 
 .cart-page-main {
-    padding-top: 130px; /* Espaçamento ajustado no topo */
+    padding-top: 05px; /* Espaçamento ajustado no topo */
     padding-bottom: 60px;
 }
 

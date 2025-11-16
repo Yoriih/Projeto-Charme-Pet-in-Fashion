@@ -47,85 +47,132 @@
 
             <form class="form-wizard" id="sob-medida-form">
 
+                <!--ETAPA 1-->
                 <div class="etapa-form active" data-step="1">
+
+                    <!--NOME DO PET-->
                     <div class="campo-form">
                         <label for="nome-pet">Nome do Pet</label>
                         <input type="text" id="nome-pet" placeholder="Ex: Paçoca">
                     </div>
+
+                    <!--RAÇA DO PET-->
                     <div class="campo-form">
                         <label for="raca-pet">Raça (ou SRD)</label>
                         <input type="text" id="raca-pet" placeholder="Ex: Dachshund, SRD (Vira-lata)">
                     </div> 
+
+                    <!--PESO DO PET-->
                     <div class="campo-form">
                         <label for="peso-pet">Peso Aproximado (kg)</label>
                         <input type="number" id="peso-pet" placeholder="Ex: 5.5">
                     </div>
+
+                    <!--ENVIAR FOTO DO PET-->
                     <div class="campo-form">
                         <label for="foto-pet">Envie uma foto (opcional)</label>
                         <input type="file" id="foto-pet" class="input-file">
                     </div>
+
+                    <!--BOTÃO PROXIMO-->
                     <div class="botoes-nav">
                         <button type="button" class="btn btn-proximo">Próximo</button>
                     </div>
+
                 </div>
 
+                <!--ETAPA 2-->
                 <div class="etapa-form" data-step="2">
+
                     <div class="container-medidas">
+
+                        <!--MEDIDAS-->
                         <div class="campos-medidas">
                             <p class="instrucao-medida">Use uma fita métrica sem apertar. Clique em cada campo para ver onde medir no diagrama.</p>
+
+                            <!--MEDIDA PESCOÇO-->
                             <div class="campo-form">
                                 <label for="medida-pescoco">Pescoço (cm)</label>
                                 <input type="number" class="input-medida" data-target="pescoco" id="medida-pescoco" placeholder="Circunferência do pescoço">
                             </div>
+
+                            <!--MEDIDA TÓRAX-->
                             <div class="campo-form">
                                 <label for="medida-torax">Tórax (cm)</label>
                                 <input type="number" class="input-medida" data-target="torax" id="medida-torax" placeholder="A parte mais larga do peito">
                             </div>
+
+                            <!--MEDIDA COMPRIMENTO-->
                             <div class="campo-form">
                                 <label for="medida-comprimento">Comprimento (cm)</label>
                                 <input type="number" class="input-medida" data-target="comprimento" id="medida-comprimento" placeholder="Base do pescoço ao início do rabo">
                             </div>
+
                         </div>
+
+                        <!--IMAGEM ILUSTRATIVA-->
                         <div class="diagrama-medidas">
                             <img src="https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/images/diagrama-dog.png" alt="Diagrama de como medir o pet">
                             <div class="ponto-medida" id="pescoco"></div>
                             <div class="ponto-medida" id="torax"></div>
                             <div class="ponto-medida" id="comprimento"></div>
-                        </div>
+                        </div> 
+
                     </div>
+
+                    <!--BOTÕES-->
                     <div class="botoes-nav">
                         <button type="button" class="btn-secondary btn-anterior">Anterior</button>
                         <button type="button" class="btn btn-proximo">Próximo</button>
                     </div>
+
                 </div>
 
+                <!--ETAPA 3-->
                 <div class="etapa-form" data-step="3">
+
                     <p class="instrucao-medida">Qual tipo de peça você gostaria de encomendar?</p>
+                    <!--TIPOS DE PEÇAS-->
                     <div class="grid-selecao-estilo">
+
+                        <!--MOLETOM-->
                         <div class="card-estilo" data-value="moletom">
                             <i class="fas fa-tshirt"></i>
                             <h4>Moletom</h4>
                         </div>
+
+                        <!--VESTIDO-->
                         <div class="card-estilo" data-value="vestido">
                             <i class="fas fa-female"></i>
                             <h4>Vestido</h4>
                         </div>
+
+                        <!--CAPA DE CHUVA-->
                         <div class="card-estilo" data-value="capa_chuva">
                             <i class="fas fa-cloud-showers-heavy"></i>
                             <h4>Capa de Chuva</h4>
                         </div>
+
+                        <!--ACESSORIOS-->
                         <div class="card-estilo" data-value="acessorio">
                             <i class="fas fa-paw"></i>
                             <h4>Acessório</h4>
                         </div>
+
                     </div>
+
+                    <!--BOTÕES-->
                     <div class="botoes-nav">
                         <button type="button" class="btn-secondary btn-anterior">Anterior</button>
                         <button type="button" class="btn btn-proximo">Próximo</button>
                     </div>
+
                 </div>
 
+                <!--ETAPA 4-->
                 <div class="etapa-form" data-step="4">
+
+                    <!--INFORMAÇÕES ADICIONAIS-->
                     <div class="campo-form">
                         <label>Deseja bordar o nome do pet na peça? (custo adicional)</label>
                         <div class="radio-group">
@@ -133,10 +180,12 @@
                             <input type="radio" id="borda-nao" name="bordado" value="nao" checked><label for="borda-nao">Não</label>
                         </div>
                     </div>
+
                     <div class="campo-form">
                         <label for="observacoes">Observações (opcional)</label>
                         <textarea id="observacoes" rows="4" placeholder="Ex: Meu pet é muito peludo, prefiro o tecido X, etc."></textarea>
                     </div>
+                    
                     <div class="botoes-nav">
                         <button type="button" class="btn-secondary btn-anterior">Anterior</button>
                         <button type="submit" class="btn">Adicionar ao Carrinho</button>

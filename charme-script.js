@@ -144,28 +144,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adicionar item SOB MEDIDA ao carrinho
     const sobMedidaForm = document.getElementById('sob-medida-form');
+    
     if (sobMedidaForm) {
         sobMedidaForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+            e.preventDefault(); //pra não recarregar a página
+
+            // COLETA DOS DADOS
             const petName = document.getElementById('nome-pet').value;
             const estilo = document.querySelector('.card-estilo.active')?.dataset.value || 'Não selecionado';
 
+            // VALIDAÇÃO
             if (!petName || estilo === 'Não selecionado') {
                 alert('Por favor, preencha o nome do pet e selecione um estilo.');
                 return;
             }
 
+            // CRIAÇÃO DO ITEM NO CARRINHO
             const item = {
-            id: `sm-${Date.now()}`,
-            nome: `Peça Sob Medida para ${petName} (${estilo})`,
-            preco: 0.00,
-            
-            imagem: 'https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/images/linha.png',
-            quantity: 1
+                id: `sm-${Date.now()}`,
+                nome: `Peça Sob Medida para ${petName} (${estilo})`,
+                preco: 0.00,
+                imagem: 'https://raw.githubusercontent.com/Yoriih/Projeto-Charme-Pet-in-Fashion/main/images/linha.png',
+                quantity: 1,
+                criadoEm: new Date()
             };
-            addItemToCart(item);
-            alert(`Sua peça sob medida para ${petName} foi adicionada ao carrinho!`);
-            window.location.href = 'carrinho.html';
+
+            console.log("Enviando item para o Database: ",item);
+            db.collection("pedidos").add(item)
+
+                // Se deu bom...
+                .then((docRef) => {
+                    console.log("Item salvo no DataBase com ID: ",docRef.id);
+
+                    // aviso o usuário e mando para outra pag
+                    alert(`Sua peça sob-medida para ${petName} foi adicionada ao carrinho!`);
+                    window.location.href = 'carrinho.html';
+                })
+                
+                // "ERRO" caso a internet caiu ou algo der errado.
+                .catch((error) => {
+                console.error("Erro ao adicionar item ao Firebase: ", error);
+                alert("Houve um erro ao salvar seu pedido. Tente novamente, por favor.");
+            });
+
         });
     }
 

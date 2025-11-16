@@ -47,7 +47,7 @@
 
             <form class="form-wizard" id="sob-medida-form">
 
-                <!--ETAPA 1-->
+                <!--ETAPA 1 (NOME, RAÇA, PESO, FOTO)-->
                 <div class="etapa-form active" data-step="1">
 
                     <!--NOME DO PET-->
@@ -81,7 +81,7 @@
 
                 </div>
 
-                <!--ETAPA 2-->
+                <!--ETAPA 2 (MEDIDAS)-->
                 <div class="etapa-form" data-step="2">
 
                     <div class="container-medidas">
@@ -128,7 +128,7 @@
 
                 </div>
 
-                <!--ETAPA 3-->
+                <!--ETAPA 3 (TIPOS DE PEÇAS)-->
                 <div class="etapa-form" data-step="3">
 
                     <p class="instrucao-medida">Qual tipo de peça você gostaria de encomendar?</p>
@@ -137,7 +137,7 @@
 
                         <!--MOLETOM-->
                         <div class="card-estilo" data-value="moletom">
-                            <i class="fas fa-tshirt"></i>
+                            <i class="fas fa-tshirt"></i> <!--icone-->
                             <h4>Moletom</h4>
                         </div>
 
@@ -172,7 +172,7 @@
                 <!--ETAPA 4-->
                 <div class="etapa-form" data-step="4">
 
-                    <!--INFORMAÇÕES ADICIONAIS-->
+                    <!--BORDAR O NOME DO PET?-->
                     <div class="campo-form">
                         <label>Deseja bordar o nome do pet na peça? (custo adicional)</label>
                         <div class="radio-group">
@@ -180,12 +180,13 @@
                             <input type="radio" id="borda-nao" name="bordado" value="nao" checked><label for="borda-nao">Não</label>
                         </div>
                     </div>
-
+                    <!--INFORMAÇÕES ADICIONAIS-->
                     <div class="campo-form">
                         <label for="observacoes">Observações (opcional)</label>
                         <textarea id="observacoes" rows="4" placeholder="Ex: Meu pet é muito peludo, prefiro o tecido X, etc."></textarea>
                     </div>
                     
+                    <!--BOTÕES-->
                     <div class="botoes-nav">
                         <button type="button" class="btn-secondary btn-anterior">Anterior</button>
                         <button type="submit" class="btn">Adicionar ao Carrinho</button>
@@ -197,7 +198,7 @@
     </section>
     </main>
 
-
+    <!--RODAPÉ COM CONTATOS, ETC-->
     <footer id="contato">
         <div class="container">
             <div class="footer-grid">
@@ -234,6 +235,11 @@
         </div>
     </footer>
 
+        <!--FIREBASE E SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="conexao.js"></script>
     <script src="charme-script.js"></script>
+    
 </body>
 </html>
